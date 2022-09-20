@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsATMFormDemo", "WindowsATMFormDemo\WindowsATMFormDemo.csproj", "{5D78E22B-156A-47B1-B878-7835C9F645B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATMLibrary", "ATMLibrary\ATMLibrary.csproj", "{B1E522FD-9A3A-4431-B6B5-5375B4065173}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D78E22B-156A-47B1-B878-7835C9F645B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D78E22B-156A-47B1-B878-7835C9F645B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D78E22B-156A-47B1-B878-7835C9F645B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D78E22B-156A-47B1-B878-7835C9F645B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E522FD-9A3A-4431-B6B5-5375B4065173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E522FD-9A3A-4431-B6B5-5375B4065173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E522FD-9A3A-4431-B6B5-5375B4065173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E522FD-9A3A-4431-B6B5-5375B4065173}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5381298-5C98-4EAB-9805-B9E0ED01BEA3}
+	EndGlobalSection
+EndGlobal
