@@ -1,0 +1,41 @@
+create database ATMDatabase;
+
+use AtmDataBase;
+
+create table CardInformation (
+UserName varchar(20) not null primary key,
+CardNumber varchar(20) not null,
+Pin varchar (10) not null)
+
+INSERT INTO CardInformation VALUES("MOHINI","8423561079853146",6455);
+INSERT INTO CardInformation VALUES("JENNY","9561023489521753",6452);
+INSERT INTO CardInformation VALUES("AKSHAY","6412359781024568",6451);
+INSERT INTO CardInformation VALUES("MERRY","8423561079853112",6450);
+INSERT INTO CardInformation VALUES("TOM","8423561079853132",6453);
+INSERT INTO CardInformation VALUES("JERRY","8423561079853189",6454);
+INSERT INTO CardInformation VALUES("REIZEL","8423561079853155",6456);
+INSERT INTO CardInformation VALUES("LIZA","8423561079853199",6457);
+INSERT INTO CardInformation VALUES("SARA","8423561079853133",6458);
+INSERT INTO CardInformation VALUES("MARIYA","8423561079853177",6459);
+
+
+use ATMDatabase;
+
+create table AccountDetails(
+AccountNumber varchar(15) not null,
+AccountBalance numeric (7, 2),
+TransactionDate datetime,
+UserName varchar(20), foreign key (UserName) references CardInformation(UserName));
+
+insert into AccountDetails values("152145315215", 50000, '2022-06-11', "Mohini");
+insert into AccountDetails values(152145315216, 40000, '2022-12-15', "Mohini");
+insert into AccountDetails values(152145315217, 30000, '2022-06-14', "Mohini");
+insert into AccountDetails values(152145315218, 20000, '2022-11-19', "Mohini");
+insert into AccountDetails values(152145315219, 10000, '2022-09-20', "Mohini");
+insert into AccountDetails values(152145315220, 60000, '2022-10-22', "Mohini");
+insert into AccountDetails values(152145315221, 70000, '2022-01-25', "Mohini");
+insert into AccountDetails values(152145315222, 80000, '2022-02-26', "Mohini");
+insert into AccountDetails values(152145315223, 90000, '2022-03-30', "Mohini");
+insert into AccountDetails values(152145315224, 22000, '2022-04-05', "Mohini");
+
+select * from AccountDetails;
